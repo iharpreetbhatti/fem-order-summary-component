@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+
+/* Reset */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --Pale-Blue: hsl(225, 100%, 94%);
+  --Bright-Blue: hsl(245, 75%, 52%);
+  --Bright-Blue-hover: hsla(245, 75%, 52%, 0.7);
+  --Bright-Blue-opaque: hsla(245, 75%, 52%, 0.3);
+  --Very-Pale-Blue: hsl(225, 100%, 98%);
+  --Desaturated-Blue: hsl(224, 23%, 55%);
+  --Desaturated-Blue-opaque: hsla(224, 23%, 55%, 0.25);
+  --Dark-Blue: hsl(223, 47%, 23%);
+}
+
+/* Basic Styling */
+body {
+  background: var(--Pale-Blue) url("../images/pattern-background-mobile.svg")
+    no-repeat top center/contain;
+  font-family: "Red Hat Display", sans-serif;
+  line-height: 1.6;
+}
+
+h1 {
+  padding: 10px 0;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+/* Main Styling */
+
+#card {
+  position: relative;
+  top: 70px;
+  max-width: 85%;
+  margin: 0 auto;
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 20px 20px -10px var(--Desaturated-Blue-opaque);
+}
+
+.header-img {
+  background: url("../images/illustration-hero.svg") no-repeat center
+    center/cover;
+  height: 160px;
+  border-top-left-radius: inherit;
+  border-top-right-radius: inherit;
+}
+
+.card-content {
+  width: 100%;
+  padding: 20px 25px;
+}
+
+.card-content h1 {
+  font-size: 22px;
+  font-weight: 900;
+  text-align: center;
+  color: var(--Dark-Blue);
+}
+
+.card-content > p {
+  text-align: center;
+  color: var(--Desaturated-Blue);
+}
+
+.plan-info {
+  background: var(--Very-Pale-Blue);
+  display: flex;
+  padding: 15px;
+  margin: 20px 0;
+  border: none;
+  border-radius: 10px;
+  align-items: center;
+}
+
+.plan-info div {
+  padding: 0 20px;
+  flex: 1;
+  line-height: 1.4;
+}
+
+.plan-info div h3 {
+  font-size: 0.85rem;
+  color: var(--Dark-Blue);
+  font-weight: 900;
+}
+
+.plan-info div p {
+  color: var(--Desaturated-Blue);
+  font-size: 0.9rem;
+}
+
+.plan-info a {
+  color: var(--Bright-Blue);
+  text-decoration: underline;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.plan-info a:hover {
+  text-decoration: none;
+  color: var(--Bright-Blue-hover);
+}
+
+.card-content .btn {
+  display: block;
+  padding: 10px 0;
+  margin-bottom: 20px;
+  background: var(--Bright-Blue);
+  border: none;
+  border-radius: 10px;
+  color: var(--Very-Pale-Blue);
+  text-align: center;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 10px 20px var(--Bright-Blue-opaque);
+}
+
+.card-content .btn:hover {
+  background: var(--Bright-Blue-hover);
+  color: var(--Very-Pale-Blue);
+}
+
+.card-content > a {
+  display: block;
+  margin: 10px 0;
+  text-align: center;
+  font-weight: 700;
+  color: var(--Desaturated-Blue);
+}
+
+.card-content > a:hover {
+  color: var(--Dark-Blue);
+}
+
+footer {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  padding: 20px;
+}
