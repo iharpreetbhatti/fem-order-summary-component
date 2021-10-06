@@ -1,0 +1,16 @@
+body {
+  background: var(--Pale-Blue) url("../images/pattern-background-desktop.svg")
+    no-repeat top center/contain;
+}
+
+#card {
+  max-width: 400px;
+}
+
+.header-img {
+  height: 200px;
+}
+
+.card-content {
+  padding: 30px 50px;
+}

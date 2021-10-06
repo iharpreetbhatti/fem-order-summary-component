@@ -26,6 +26,10 @@ body {
     no-repeat top center/contain;
   font-family: "Red Hat Display", sans-serif;
   line-height: 1.6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
 h1 {
@@ -40,9 +44,7 @@ a {
 /* Main Styling */
 
 #card {
-  position: relative;
-  top: 70px;
-  max-width: 85%;
+  max-width: 300px;
   margin: 0 auto;
   background: #fff;
   border-radius: 20px;
@@ -116,7 +118,7 @@ a {
 .card-content .btn {
   display: block;
   padding: 10px 0;
-  margin-bottom: 20px;
+  margin: 20px 0;
   background: var(--Bright-Blue);
   border: none;
   border-radius: 10px;
